@@ -8,7 +8,7 @@
       name="description"
       content="Trip Match helps couples and groups swipe destinations together, match on where to go, compare dates, and book with trusted travel partners."
     >
-    <meta name="theme-color" content="#0f2136">
+    <meta name="theme-color" content="#06131F">
     <meta property="og:title" content="Trip Match | Stop debating. Start traveling.">
     <meta
       property="og:description"
@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
@@ -37,7 +37,8 @@
 
         <nav class="nav-links" aria-label="Primary">
           <a href="#how-it-works">How It Works</a>
-          <a href="#features">Features</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#features">Benefits</a>
           <a href="#screens">Screens</a>
           <a href="#waitlist">Waitlist</a>
         </nav>
@@ -57,42 +58,65 @@
               and book externally with trusted travel partners.
             </p>
 
+            <div class="hero-intents" aria-label="Trip types">
+              <span class="chip chip-coral">Couples</span>
+              <span class="chip chip-blue">Friend groups</span>
+              <span class="chip chip-gold">Weekend escapes</span>
+            </div>
+
             <div class="cta-row">
               <a class="btn btn-primary" href="#waitlist">Join the Waitlist</a>
               <a class="btn btn-secondary" href="#how-it-works">See How It Works</a>
             </div>
 
             <ul class="hero-proof" role="list">
-              <li>Trip rooms built for couples, friend groups, and birthday crews.</li>
-              <li>Smarter destination picks based on vibe, budget, and distance.</li>
-              <li>External booking links when your group is ready to lock it in.</li>
+              <li>
+                <strong>Create one room</strong>
+                <span>Bring your partner, birthday crew, or long-weekend group into the same flow.</span>
+              </li>
+              <li>
+                <strong>Swipe with context</strong>
+                <span>Destinations, budgets, and timing stay visible while everyone votes.</span>
+              </li>
+              <li>
+                <strong>Move with confidence</strong>
+                <span>Go from first spark to match, date vote, and booking handoff in one place.</span>
+              </li>
             </ul>
 
             <div class="hero-metrics" aria-label="Trip Match highlights">
               <article class="metric-card">
-                <strong>4 friends</strong>
-                <span>One room, one shared shortlist.</span>
+                <span class="metric-label">Live room</span>
+                <strong>4 travelers aligned</strong>
+                <span>Palma, Lisbon, and Como are still in the running.</span>
               </article>
               <article class="metric-card">
-                <strong>12 picks</strong>
-                <span>Swipe until the overlap gets obvious.</span>
+                <span class="metric-label">Fast shortlist</span>
+                <strong>Top 3 in minutes</strong>
+                <span>Everyone sees the same signals before the chat goes cold.</span>
               </article>
               <article class="metric-card">
-                <strong>2 date wins</strong>
-                <span>Vote on weekends before prices jump.</span>
+                <span class="metric-label">Book when ready</span>
+                <strong>External links, no lock-in</strong>
+                <span>Flight, hotel, and activity decisions can stay flexible until the end.</span>
               </article>
             </div>
           </div>
 
           <div class="hero-visual reveal">
             <div class="float-card float-card-top">
-              <span class="float-label">Best overlap</span>
-              <strong>Mar 14 to Mar 18</strong>
+              <span class="float-label">Room live</span>
+              <strong>Kyoto is leading</strong>
+              <p>3 saves, 1 maybe, and hotel votes are up next.</p>
             </div>
 
             <div class="float-card float-card-bottom">
-              <span class="float-label">Group vibe</span>
-              <strong>Beach + nightlife + walkable</strong>
+              <span class="float-label">Shared vibe</span>
+              <strong>Food, design, and easy flights</strong>
+              <div class="float-chip-row" aria-hidden="true">
+                <span>Fri-Mon</span>
+                <span>Under $1,100</span>
+              </div>
             </div>
 
             <div class="phone-frame" aria-label="Trip Match app preview">
@@ -110,6 +134,11 @@
                   </div>
                 </div>
 
+                <div class="hero-room-card" aria-hidden="true">
+                  <span class="chip chip-blue">4 in room</span>
+                  <span class="chip chip-mint">Date vote ready</span>
+                </div>
+
                 <div class="stack-shell" aria-hidden="true">
                   <div class="stack-back"></div>
                   <div class="stack-mid"></div>
@@ -121,7 +150,10 @@
                     alt="Sunlit tropical coastline placeholder destination"
                   >
                   <div class="destination-overlay">
-                    <span class="pill pill-light">92% vibe fit</span>
+                    <div class="chip-row">
+                      <span class="pill pill-light">92% vibe fit</span>
+                      <span class="pill pill-coral">Most saved</span>
+                    </div>
                     <p class="destination-name">Palma, Spain</p>
                     <p class="destination-copy">
                       Beach clubs, old town dinners, and a simple split between flying and driving.
@@ -155,13 +187,29 @@
 
       <section class="section" id="how-it-works">
         <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">How It Works</p>
-            <h2>Make the group decision before the group chat burns out.</h2>
-            <p>
-              Trip Match turns scattered opinions into a shared direction. Everyone swipes, the
-              app finds the overlap, and your travel plan gets clearer with each round.
-            </p>
+          <div class="section-intro-grid">
+            <div class="section-heading reveal">
+              <p class="eyebrow">How It Works</p>
+              <h2>Make the group decision before the group chat burns out.</h2>
+              <p>
+                Trip Match turns scattered opinions into a shared direction. Everyone swipes, the
+                app finds the overlap, and your travel plan gets clearer with each round.
+              </p>
+            </div>
+
+            <aside class="trip-room-panel reveal" aria-label="Trip room summary">
+              <p class="panel-kicker">Inside a trip room</p>
+              <h3>Plan the trip everyone actually wants.</h3>
+              <p>
+                Destinations, dates, and budget guardrails stay visible so the whole group can keep
+                moving without anyone becoming the spreadsheet owner.
+              </p>
+              <ul class="panel-list" role="list">
+                <li>Shared shortlist, visible momentum</li>
+                <li>Quick yes or no decisions with context</li>
+                <li>Votes that turn into a bookable plan</li>
+              </ul>
+            </aside>
           </div>
 
           <ol class="steps-grid">
@@ -187,27 +235,120 @@
             </li>
             <li class="step-card reveal">
               <span class="step-number">05</span>
-              <h3>Compare dates and travel options</h3>
-              <p>Vote on weekends, compare schedules, and weigh driving versus flying without leaving the flow.</p>
+              <h3>Vote on dates, flights, and hotel options</h3>
+              <p>Keep the group aligned on timing and travel tradeoffs without leaving the app flow.</p>
             </li>
             <li class="step-card reveal">
               <span class="step-number">06</span>
-              <h3>Book externally</h3>
-              <p>When the trip is aligned, jump out to trusted booking partners to complete the purchase.</p>
+              <h3>Book externally and build the itinerary</h3>
+              <p>Hand off to trusted partners once the match is clear, then keep the plan organized together.</p>
             </li>
           </ol>
         </div>
       </section>
 
-      <section class="section" id="features">
+      <section class="section destination-section" id="destinations">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Features</p>
-            <h2>Planning tools that feel built for real people, not spreadsheets.</h2>
+            <p class="eyebrow">Trending Boards</p>
+            <h2>Destination matches with an editorial feel.</h2>
             <p>
-              Every feature is designed to keep the energy high while giving your group the
-              structure it needs to decide quickly.
+              These are the kinds of trips people save for the group chat immediately: cinematic,
+              social, and easy to say yes to.
             </p>
+          </div>
+
+          <div class="destination-grid">
+            <article class="destination-feature reveal">
+              <img
+                src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&amp;fit=crop&amp;w=1400&amp;q=80"
+                alt="European city street at dusk"
+                loading="lazy"
+              >
+              <div class="destination-card-copy">
+                <div class="chip-row">
+                  <span class="chip chip-coral">Most matched</span>
+                  <span class="chip chip-gold">From $680 flight</span>
+                </div>
+                <h3>Lisbon after dark, coastal by day</h3>
+                <p>
+                  Rooftop dinners, nearby beaches, and easy direct flights make this a fast yes for
+                  mixed groups.
+                </p>
+              </div>
+            </article>
+
+            <div class="destination-stack">
+              <article class="destination-tile reveal">
+                <img
+                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  alt="Sunlit coastline with beach water"
+                  loading="lazy"
+                >
+                <div class="destination-card-copy">
+                  <div class="chip-row">
+                    <span class="chip chip-mint">Couples favorite</span>
+                  </div>
+                  <h3>Palma, Spain</h3>
+                  <p>Beach clubs, old town dinners, and one-villa simplicity for the whole crew.</p>
+                </div>
+              </article>
+
+              <article class="destination-tile reveal">
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  alt="Lake and mountain scenery"
+                  loading="lazy"
+                >
+                <div class="destination-card-copy">
+                  <div class="chip-row">
+                    <span class="chip chip-blue">Premium pick</span>
+                    <span class="chip chip-gold">Drive or fly</span>
+                  </div>
+                  <h3>Lake Como</h3>
+                  <p>Scenic drives, boutique hotels, and a polished long-weekend atmosphere.</p>
+                </div>
+              </article>
+
+              <article class="destination-tile reveal">
+                <img
+                  src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                  alt="City skyline at blue hour"
+                  loading="lazy"
+                >
+                <div class="destination-card-copy">
+                  <div class="chip-row">
+                    <span class="chip chip-coral">City energy</span>
+                  </div>
+                  <h3>Mexico City</h3>
+                  <p>Big food energy, design-forward stays, and enough variety for groups with mixed taste.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-intro-grid">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Product Benefits</p>
+              <h2>Confidence for the whole trip, not just the first swipe.</h2>
+              <p>
+                Every product layer is there to reduce group friction, sharpen the shortlist, and
+                make the final yes feel obvious.
+              </p>
+            </div>
+
+            <aside class="trip-room-panel benefits-panel reveal" aria-label="Trip Match benefits summary">
+              <p class="panel-kicker">Why it works</p>
+              <h3>Less planning admin. Better shared decisions.</h3>
+              <p>
+                The app feels playful on the surface, but underneath it keeps budgets, transport
+                choices, and group signals structured enough to move forward.
+              </p>
+            </aside>
           </div>
 
           <div class="feature-grid">
@@ -249,9 +390,9 @@
         <div class="container">
           <div class="section-heading reveal">
             <p class="eyebrow">Who It’s For</p>
-            <h2>Built for the trips that are fun to imagine and hard to finalize.</h2>
+            <h2>Made for the trips with the most opinions.</h2>
             <p>
-              Trip Match gives every kind of traveler a faster way to agree on the right destination.
+              Trip Match gives every kind of traveler a faster, calmer way to agree on the right destination.
             </p>
           </div>
 
@@ -401,12 +542,16 @@
           <div class="waitlist-shell reveal">
             <div class="waitlist-copy">
               <p class="eyebrow">Waitlist / Contact</p>
-              <h2>Bring your travel group before the public launch.</h2>
+              <h2>Bring your travel group in before the public launch.</h2>
               <p>
                 Join the early list to get launch updates, product previews, and first access when
                 Trip Match opens. This page is fully static, so the form below is a polished UI mock
                 that confirms directly on-page.
               </p>
+
+              <div class="waitlist-actions">
+                <a class="btn btn-secondary" href="#screens">Preview the app flow</a>
+              </div>
             </div>
 
             <div class="waitlist-card">
